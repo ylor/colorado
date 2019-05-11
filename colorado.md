@@ -1,3 +1,5 @@
+
+
 # Workout #1 - Monday 💪
 
 1. Stiff-Legged Deadlift with Barbell – Regular 
@@ -229,4 +231,7 @@
 12. Squat with Barbell – Regular
 
 🎉🎉🎉
+
 IT IS DONE.gif
+
+🎉🎉🎉
