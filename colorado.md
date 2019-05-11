@@ -1,5 +1,3 @@
-
-
 # Workout #1 - Monday 💪
 
 1. Stiff-Legged Deadlift with Barbell – Regular 
