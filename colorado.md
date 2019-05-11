@@ -1,5 +1,3 @@
-
-
 # Workout #1 - Monday 💪
 
 1. Stiff-Legged Deadlift with Barbell – Regular 
@@ -13,9 +11,9 @@
 9. Overhead Triceps Extension with Dumbbell – Regular 
 10. Biceps Curl with Barbell – Negative Only 
 
-# Tuesday OFF 🎉
+# Tuesday - OFF 🎉
 
-# Workout #2 WED 💪
+# Workout #2 - Wednesday 💪
 
 1. Bent-Armed Pullover with EZ-Curl Bar – Regular 
 2. Lat-Machine Pulldown to Chest – Regular 
@@ -28,7 +26,7 @@
 9. Dip – Regular 
 10. Squat with Barbell – Regular 
 
-# Workout #3 - THU 💪
+# Workout #3 - Thursday 💪
 
 1. Bent-Armed Pullover with EZ-Curl Bar – Regular 
 2. Bent-Over Row with Barbell – Regular 
@@ -45,7 +43,7 @@
 13. Squat with Barbell – Regular 
 14. Leg Curl Machine – Negative Only 
 
-# Workout #4 - FRI 💪
+# Workout #4 - Friday 💪
 
 1. Bent-Armed Pullover with EZ-Curl Bar – Regular 
 2. Lat-Machine Pulldown to Chest – Regular 
@@ -60,11 +58,9 @@
 11. Squat with Barbell – Regular 
 12. Stiff-Legged Deadlift with Barbell – Regular 
 
-# SAT Off 🎉
+# 🎉 Weekend - OFF 🎉
 
-# Off SUN 🎉
-
-# Workout #5 MON  💪
+# Workout #5 - Monday  💪
 
 1. Bent-Armed Pullover with EZ-Curl Bar – Regular 
 2. Bent-Over Row with Barbell – Regular 
@@ -79,11 +75,11 @@
 11. Leg Extension Machine – Negative Only 
 12. Squat with Barbell – Regular 
 
-# Off TUE 🎉
+# Tuesday - OFF 🎉
 
-# Off WED 🎉
+# Wednesday - OFF 🎉
 
-# Workout #6 THU 💪
+# Workout #6 - Thursday 💪
 
 1. Chin-Up – Regular 
 2. Dip – Regular 
@@ -94,7 +90,7 @@
 7. Dip – Regular 
 8. Squat with Barbell – Regular 
 
-# Workout #7 FRI 💪
+# Workout #7 - Friday 💪
 
 1. Bent-Armed Pullover with EZ-Curl Bar – Regular 
 2. Lat-Machine Pulldown to Chest – Regular 
@@ -109,11 +105,9 @@
 11. Stiff-Legged Deadlift with Barbell – Regular 
 12. Leg Extension Machine – Negative Only 
 
-# Off SAT – JUL 21 🎉
+# 🎉 Weekend - OFF 🎉
 
-# Off - SUN – JUL 22 🎉
-
-# Workout #8 - MON 💪
+# Workout #8 - Monday 💪
 
 1. Bent-Armed Pullover with EZ-Curl Bar – Regular 
 2. Chin-Up – Regular 
@@ -128,9 +122,9 @@
 11. Chin-Up – Negative Only 
 12. Squat with Barbell – Regular 
 
-# Off TUE – JUL 24 🎉
+# Tuesday - OFF 🎉
 
-# Workout #9 WED 💪
+# Workout #9 - Wednesday 💪
 
 1. Bent-Armed Pullover with EZ-Curl Bar – Regular 
 2. Lat-Machine Pulldown to Chest – Regular 
@@ -149,7 +143,7 @@
 
 # Off THU 🎉
 
-# Workout #10 FRI 💪
+# Workout #10 - Friday 💪
 
 1. Bent-Armed Pullover with EZ-Curl Bar – Regular 
 2. Lat-Machine Pulldown to Chest – Regular 
@@ -165,11 +159,9 @@
 12. Squat with Barbell – Regular 
 13. Stiff-Legged Deadlift with Barbell – Regular 
 
-# Off SAT – JUL 28 🎉
+# 🎉 Weekend - OFF 🎉
 
-# Off SUN – JUL 29 🎉
-
-# Workout #11  MON 💪
+# Workout #11 - Monday 💪
 
 1. Bent-Armed Pullover with EZ-Curl Bar – Regular 
 2. Bent-Over Row with Barbell – Regular 
@@ -184,7 +176,7 @@
 11. Squat with Barbell – Regular 
 12. Leg Extension Machine – Negative Only 
 
-# Off TUE 🎉
+# Tuesday - OFF 🎉
 
 # Workout #12 WED 💪
 
@@ -200,7 +192,7 @@
 10. Dip – Regular 
 11. Wrist Curl with Barbell – Regular 
 
-# Workout #13 THU 💪
+# Workout #13 - Thursday 💪
 
 1. Bent-Armed Pullover with EZ-Curl Bar – Regular 
 2. Bent-Over Row with Barbell – Regular 
@@ -215,7 +207,7 @@
 11. Wrist Curl with Barbell – Regular 
 12. Squat with Barbell – Regular 
 
-# Workout #14 FRI 💪
+# Workout #14 - Friday 💪
 
 1. Overhead Press with Barbell – Regular 
 2. Chin-Up – Regular 
