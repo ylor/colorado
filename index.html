@@ -3,22 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico"/>
-    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <title>The Colorado Experiment</title>
   </head>
   <style>
     @import url("https://rsms.me/inter/inter.css");
-    @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+    @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono");
 
     :root {
       --bg-color: #111;
       --text-color: #ccc;
       --heading-color: #fedd56;
       --link-color: #fbf1a9;
-      --font-stack: -apple-system, BlinkMacSystemFont, 'Inter var', Helvetica,
+      --font-stack: -apple-system, BlinkMacSystemFont, "Inter var", Helvetica,
         Arial, sans-serif;
-      --mono-stack: 'SFMono-Regular', 'Menlo', 'IBM Plex Mono', monospace;
+      --mono-stack: "SFMono-Regular", "Menlo", "IBM Plex Mono", monospace;
     }
 
     html {
@@ -26,9 +26,9 @@
 
     body {
       margin-right: 0 auto;
-      margin-left:  0 auto;
+      margin-left: 0 auto;
       max-width: 960px;
-      padding:  16px;
+      padding: 16px;
 
       background: var(--bg-color);
       color: var(--text-color);
@@ -44,34 +44,7 @@
 
     a {
       color: var(--link-color);
-  position: relative;
-  text-decoration: none;
-  z-index: 1;
-}
-
-a::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: -4px;
-  right: -4px;
-  background-color: var(--link-color);
-  transform-origin: bottom center;
-  transform: scaleY(0.1);
-  transition: all 0.1s ease-in-out;
-  color: var(--bg-color)
-}
-
-a:hover {
-  color: var(--bg-color)
-}
-
-a:hover::before {
-  transform: scaleY(1);
-  background-color: var(--link-color);
-}
+    }
 
     h1 {
       color: var(--heading-color);
@@ -81,34 +54,42 @@ a:hover::before {
       text-align: center;
       text-transform: uppercase;
     }
-    
+
+    hr {
+      max-width: 600px;
+    }
+
     ol {
       font-family: var(--mono-stack);
       padding-top: 10px;
       padding-bottom: 25px;
+      max-width: 75vh;
+      margin: auto;
     }
 
     .nav ul {
-  list-style: none;
-  text-align: center;
-}
-.nav li {
-  display: inline-block;
-  font-weight: 600;
-}
+      list-style: none;
+      text-align: center;
+      padding: 0;
+    }
+    .nav li {
+      display: inline;
+      font-weight: 600;
+    }
 
-.nav li + li:before{
-    content: " | ";
-    padding: 0 10px;
-}
-  
-.nav a:hover {
-}
- 
-.nav a.active {
-}
+    .nav li + li:before {
+      content: " | ";
+      padding: 0 10px;
+    }
 
-    #title, #title a {
+    .nav a:hover {
+    }
+
+    .nav a.active {
+    }
+
+    #title,
+    #title a {
       font-size: 50px;
       font-weight: 900;
       color: var(--heading-color);
@@ -126,30 +107,30 @@ a:hover::before {
 
   <body>
     <h1 id="title"><a href="/">The Colorado Experiment</a></h1>
-      <div class="nav">
-        <ul>
-          <li><a href="/guidelines">Guidelines</a></li>
-          <li><a href="/exercises">Exercises</a></li>
-        </ul>
-      </div>
+    <div class="nav">
+      <ul>
+        <li><a href="/rules">Rules</a></li>
+        <li><a href="/exercises">Exercises</a></li>
+      </ul>
+    </div>
     <hr />
     <h1 id="workout1monday">Workout #1 - Monday</h1>
 
     <ol>
-      <li>Stiff-Legged Deadlift with Barbell – Regular</li>
+      <li>Stiff-Legged Deadlift with Barbell</li>
 
-      <li>Leg Extension Machine – Negative Only</li>
+      <li>Leg Extension Machine – <b>Negative</b></li>
 
-      <li>Squat with Barbell – Regular</li>
+      <li>Squat with Barbell</li>
 
-      <li>Leg Curl Machine – Negative Only</li>
+      <li>Leg Curl Machine – <b>Negative</b></li>
 
-      <li>Bent-Armed Pullover with EZ-Curl Bar – Regular</li>
-      <li>Lat-Machine Pulldown to Chest – Regular</li>
-      <li>Overhead Press with Barbell – Regular</li>
-      <li>Chin-Up – Negative Only</li>
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Bent-Armed Pullover with EZ-Curl Bar</li>
+      <li>Lat-Machine Pulldown to Chest</li>
+      <li>Overhead Press with Barbell</li>
+      <li>Chin-Up – <b>Negative</b></li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
     </ol>
     <hr />
     <h1 id="tuesdayoff">Tuesday - OFF</h1>
@@ -160,85 +141,85 @@ a:hover::before {
     <h1 id="workout2wednesday">Workout #2 - Wednesday</h1>
 
     <ol>
-      <li>Bent-Armed Pullover with EZ-Curl Bar – Regular</li>
+      <li>Bent-Armed Pullover with EZ-Curl Bar</li>
 
-      <li>Lat-Machine Pulldown to Chest – Regular</li>
+      <li>Lat-Machine Pulldown to Chest</li>
 
-      <li>Overhead Press with Barbell – Regular</li>
+      <li>Overhead Press with Barbell</li>
 
-      <li>Chin-Up – Negative Only</li>
+      <li>Chin-Up – <b>Negative</b></li>
 
-      <li>Bench Press with Barbell – Negative Only</li>
+      <li>Bench Press with Barbell – <b>Negative</b></li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Lateral Raise with Dumbbells – Regular</li>
+      <li>Lateral Raise with Dumbbells</li>
 
-      <li>Dip – Regular</li>
+      <li>Dip</li>
 
-      <li>Squat with Barbell – Regular</li>
+      <li>Squat with Barbell</li>
     </ol>
     <hr />
     <h1 id="workout3thursday">Workout #3 - Thursday</h1>
 
     <ol>
-      <li>Bent-Armed Pullover with EZ-Curl Bar – Regular</li>
+      <li>Bent-Armed Pullover with EZ-Curl Bar</li>
 
-      <li>Bent-Over Row with Barbell – Regular</li>
+      <li>Bent-Over Row with Barbell</li>
 
-      <li>Overhead Press with Barbell – Regular</li>
+      <li>Overhead Press with Barbell</li>
 
-      <li>Chin-Up – Negative Only</li>
+      <li>Chin-Up – <b>Negative</b></li>
 
-      <li>Dip – Negative Only</li>
+      <li>Dip – <b>Negative</b></li>
 
-      <li>Shoulder Shrug with Barbell – Regular</li>
+      <li>Shoulder Shrug with Barbell</li>
 
-      <li>Bench Press with Barbell – Negative Only</li>
+      <li>Bench Press with Barbell – <b>Negative</b></li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Behind Neck Chin-Up – Negative Only</li>
+      <li>Behind Neck Chin-Up – <b>Negative</b></li>
 
-      <li>Lateral Raise with Dumbbells – Regular</li>
+      <li>Lateral Raise with Dumbbells</li>
 
-      <li>Leg Extension Machine – Negative Only</li>
+      <li>Leg Extension Machine – <b>Negative</b></li>
 
-      <li>Squat with Barbell – Regular</li>
+      <li>Squat with Barbell</li>
 
-      <li>Leg Curl Machine – Negative Only</li>
+      <li>Leg Curl Machine – <b>Negative</b></li>
     </ol>
     <hr />
     <h1 id="workout4friday">Workout #4 - Friday</h1>
 
     <ol>
-      <li>Bent-Armed Pullover with EZ-Curl Bar – Regular</li>
+      <li>Bent-Armed Pullover with EZ-Curl Bar</li>
 
-      <li>Lat-Machine Pulldown to Chest – Regular</li>
+      <li>Lat-Machine Pulldown to Chest</li>
 
-      <li>Overhead Press with Barbell – Regular</li>
+      <li>Overhead Press with Barbell</li>
 
-      <li>Chin-Up – Regular</li>
+      <li>Chin-Up</li>
 
-      <li>Bent-Over Row with Barbell – Regular</li>
+      <li>Bent-Over Row with Barbell</li>
 
-      <li>Dip – Regular</li>
+      <li>Dip</li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Lateral Raise with Dumbbells – Regular</li>
+      <li>Lateral Raise with Dumbbells</li>
 
-      <li>Squat with Barbell – Regular</li>
+      <li>Squat with Barbell</li>
 
-      <li>Stiff-Legged Deadlift with Barbell – Regular</li>
+      <li>Stiff-Legged Deadlift with Barbell</li>
     </ol>
     <hr />
     <h1 id="weekendoff">Weekend - OFF</h1>
@@ -250,29 +231,29 @@ a:hover::before {
     <h1 id="workout5monday">Workout #5 - Monday</h1>
 
     <ol>
-      <li>Bent-Armed Pullover with EZ-Curl Bar – Regular</li>
+      <li>Bent-Armed Pullover with EZ-Curl Bar</li>
 
-      <li>Bent-Over Row with Barbell – Regular</li>
+      <li>Bent-Over Row with Barbell</li>
 
-      <li>Overhead Press with Barbell – Regular</li>
+      <li>Overhead Press with Barbell</li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Bench Press with Barbell – Negative Only</li>
+      <li>Bench Press with Barbell – <b>Negative</b></li>
 
-      <li>Chin-Up – Negative Only</li>
+      <li>Chin-Up – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Lateral Raise with Dumbbells – Regular</li>
+      <li>Lateral Raise with Dumbbells</li>
 
-      <li>Stiff-Legged Deadlift with Barbell – Regular</li>
+      <li>Stiff-Legged Deadlift with Barbell</li>
 
-      <li>Leg Extension Machine – Negative Only</li>
+      <li>Leg Extension Machine – <b>Negative</b></li>
 
-      <li>Squat with Barbell – Regular</li>
+      <li>Squat with Barbell</li>
     </ol>
     <hr />
     <h1 id="tuesdayoff-1">Tuesday - OFF</h1>
@@ -290,49 +271,49 @@ a:hover::before {
     <h1 id="workout6thursday">Workout #6 - Thursday</h1>
 
     <ol>
-      <li>Chin-Up – Regular</li>
+      <li>Chin-Up</li>
 
-      <li>Dip – Regular</li>
+      <li>Dip</li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Shoulder Shrug with Barbell – Regular</li>
+      <li>Shoulder Shrug with Barbell</li>
 
-      <li>Overhead Press with Barbell – Regular</li>
+      <li>Overhead Press with Barbell</li>
 
-      <li>Dip – Regular</li>
+      <li>Dip</li>
 
-      <li>Squat with Barbell – Regular</li>
+      <li>Squat with Barbell</li>
     </ol>
     <hr />
     <h1 id="workout7friday">Workout #7 - Friday</h1>
 
     <ol>
-      <li>Bent-Armed Pullover with EZ-Curl Bar – Regular</li>
+      <li>Bent-Armed Pullover with EZ-Curl Bar</li>
 
-      <li>Lat-Machine Pulldown to Chest – Regular</li>
+      <li>Lat-Machine Pulldown to Chest</li>
 
-      <li>Overhead Press with Barbell – Regular</li>
+      <li>Overhead Press with Barbell</li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Bench Press with Barbell – Negative Only</li>
+      <li>Bench Press with Barbell – <b>Negative</b></li>
 
-      <li>Chin-Up – Negative Only</li>
+      <li>Chin-Up – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Behind-Neck Pull-Up – Negative Only</li>
+      <li>Behind-Neck Pull-Up – <b>Negative</b></li>
 
-      <li>Lateral Raise with Dumbbells – Regular</li>
+      <li>Lateral Raise with Dumbbells</li>
 
-      <li>Squat with Barbell – Regular</li>
+      <li>Squat with Barbell</li>
 
-      <li>Stiff-Legged Deadlift with Barbell – Regular</li>
+      <li>Stiff-Legged Deadlift with Barbell</li>
 
-      <li>Leg Extension Machine – Negative Only</li>
+      <li>Leg Extension Machine – <b>Negative</b></li>
     </ol>
     <hr />
     <h1 id="weekendoff-1">Weekend - OFF</h1>
@@ -345,29 +326,29 @@ a:hover::before {
     <h1 id="workout8monday">Workout #8 - Monday</h1>
 
     <ol>
-      <li>Bent-Armed Pullover with EZ-Curl Bar – Regular</li>
+      <li>Bent-Armed Pullover with EZ-Curl Bar</li>
 
-      <li>Chin-Up – Regular</li>
+      <li>Chin-Up</li>
 
-      <li>Bench Press with Barbell – Negative Only</li>
+      <li>Bench Press with Barbell – <b>Negative</b></li>
 
-      <li>Dip – Regular</li>
+      <li>Dip</li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Lat-Machine Pulldown to Chest – Regular</li>
+      <li>Lat-Machine Pulldown to Chest</li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Overhead Press with Barbell – Regular</li>
+      <li>Overhead Press with Barbell</li>
 
-      <li>Dip – Negative Only</li>
+      <li>Dip – <b>Negative</b></li>
 
-      <li>Bent-Over Row with Barbell – Regular</li>
+      <li>Bent-Over Row with Barbell</li>
 
-      <li>Chin-Up – Negative Only</li>
+      <li>Chin-Up – <b>Negative</b></li>
 
-      <li>Squat with Barbell – Regular</li>
+      <li>Squat with Barbell</li>
     </ol>
     <hr />
     <h1 id="tuesdayoff-2">Tuesday - OFF</h1>
@@ -379,33 +360,33 @@ a:hover::before {
     <h1 id="workout9wednesday">Workout #9 - Wednesday</h1>
 
     <ol>
-      <li>Bent-Armed Pullover with EZ-Curl Bar – Regular</li>
+      <li>Bent-Armed Pullover with EZ-Curl Bar</li>
 
-      <li>Lat-Machine Pulldown to Chest – Regular</li>
+      <li>Lat-Machine Pulldown to Chest</li>
 
-      <li>Chin-Up – Regular</li>
+      <li>Chin-Up</li>
 
-      <li>Bench Press with Barbell – Negative Only</li>
+      <li>Bench Press with Barbell – <b>Negative</b></li>
 
-      <li>Dip – Regular</li>
+      <li>Dip</li>
 
-      <li>Overhead Press with Barbell – Regular</li>
+      <li>Overhead Press with Barbell</li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Bent-Over Row with Barbell – Regular</li>
+      <li>Bent-Over Row with Barbell</li>
 
-      <li>Chin-Up – Negative Only</li>
+      <li>Chin-Up – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Lateral Raise with Dumbbells – Regular</li>
+      <li>Lateral Raise with Dumbbells</li>
 
-      <li>Dip – Negative Only</li>
+      <li>Dip – <b>Negative</b></li>
 
-      <li>Squat with Barbell – Regular</li>
+      <li>Squat with Barbell</li>
 
-      <li>Stiff-Legged Deadlift with Barbell – Regular</li>
+      <li>Stiff-Legged Deadlift with Barbell</li>
     </ol>
     <hr />
     <h1 id="offthu">Thursday - OFF</h1>
@@ -417,31 +398,31 @@ a:hover::before {
     <h1 id="workout10friday">Workout #10 - Friday</h1>
 
     <ol>
-      <li>Bent-Armed Pullover with EZ-Curl Bar – Regular</li>
+      <li>Bent-Armed Pullover with EZ-Curl Bar</li>
 
-      <li>Lat-Machine Pulldown to Chest – Regular</li>
+      <li>Lat-Machine Pulldown to Chest</li>
 
-      <li>Overhead Press with Barbell – Regular</li>
+      <li>Overhead Press with Barbell</li>
 
-      <li>Chin-Up – Regular</li>
+      <li>Chin-Up</li>
 
-      <li>Bench Press with Barbell – Negative Only</li>
+      <li>Bench Press with Barbell – <b>Negative</b></li>
 
-      <li>Dip – Regular</li>
+      <li>Dip</li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Bent-Over Row with Barbell – Regular</li>
+      <li>Bent-Over Row with Barbell</li>
 
-      <li>Lateral Raise with Dumbbells – Regular</li>
+      <li>Lateral Raise with Dumbbells</li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Squat with Barbell – Regular</li>
+      <li>Squat with Barbell</li>
 
-      <li>Stiff-Legged Deadlift with Barbell – Regular</li>
+      <li>Stiff-Legged Deadlift with Barbell</li>
     </ol>
     <hr />
     <h1 id="weekendoff-2">Weekend - OFF</h1>
@@ -453,29 +434,29 @@ a:hover::before {
     <hr />
     <h1 id="workout11monday">Workout #11 - Monday</h1>
     <ol>
-      <li>Bent-Armed Pullover with EZ-Curl Bar – Regular</li>
+      <li>Bent-Armed Pullover with EZ-Curl Bar</li>
 
-      <li>Bent-Over Row with Barbell – Regular</li>
+      <li>Bent-Over Row with Barbell</li>
 
-      <li>Overhead Press with Barbell – Regular</li>
+      <li>Overhead Press with Barbell</li>
 
-      <li>Chin-Up – Regular</li>
+      <li>Chin-Up</li>
 
-      <li>Bench Press with Barbell – Negative Only</li>
+      <li>Bench Press with Barbell – <b>Negative</b></li>
 
-      <li>Dip – Regular</li>
+      <li>Dip</li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Behind-Neck Pull-Up – Negative Only</li>
+      <li>Behind-Neck Pull-Up – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Squat with Barbell – Regular</li>
+      <li>Squat with Barbell</li>
 
-      <li>Leg Extension Machine – Negative Only</li>
+      <li>Leg Extension Machine – <b>Negative</b></li>
     </ol>
     <hr />
     <h1 id="tuesdayoff-3">Tuesday - OFF</h1>
@@ -487,83 +468,83 @@ a:hover::before {
     <hr />
     <h1 id="workout12wed">Workout #12 - Wednesday</h1>
     <ol>
-      <li>Overhead Press with Barbell – Regular</li>
+      <li>Overhead Press with Barbell</li>
 
-      <li>Chin-Up – Regular</li>
+      <li>Chin-Up</li>
 
-      <li>Dip – Regular</li>
+      <li>Dip</li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Bench Press with Barbell – Negative Only</li>
+      <li>Bench Press with Barbell – <b>Negative</b></li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Dip – Regular</li>
+      <li>Dip</li>
 
-      <li>Wrist Curl with Barbell – Regular</li>
+      <li>Wrist Curl with Barbell</li>
     </ol>
     <hr />
     <h1 id="workout13thursday">Workout #13 - Thursday</h1>
 
     <ol>
-      <li>Bent-Armed Pullover with EZ-Curl Bar – Regular</li>
+      <li>Bent-Armed Pullover with EZ-Curl Bar</li>
 
-      <li>Bent-Over Row with Barbell – Regular</li>
+      <li>Bent-Over Row with Barbell</li>
 
-      <li>Overhead Press with Barbell – Regular</li>
+      <li>Overhead Press with Barbell</li>
 
-      <li>Chin-Up – Negative Only</li>
+      <li>Chin-Up – <b>Negative</b></li>
 
-      <li>Dip – Negative Only</li>
+      <li>Dip – <b>Negative</b></li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Dip – Negative Only</li>
+      <li>Dip – <b>Negative</b></li>
 
-      <li>Wrist Curl with Barbell – Regular</li>
+      <li>Wrist Curl with Barbell</li>
 
-      <li>Squat with Barbell – Regular</li>
+      <li>Squat with Barbell</li>
     </ol>
     <hr />
     <h1 id="workout14friday">Workout #14 - Friday</h1>
 
     <ol>
-      <li>Overhead Press with Barbell – Regular</li>
+      <li>Overhead Press with Barbell</li>
 
-      <li>Chin-Up – Regular</li>
+      <li>Chin-Up</li>
 
-      <li>Dip – Regular</li>
+      <li>Dip</li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Bench Press with Barbell – Negative Only</li>
+      <li>Bench Press with Barbell – <b>Negative</b></li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Biceps Curl with Barbell – Negative Only</li>
+      <li>Biceps Curl with Barbell – <b>Negative</b></li>
 
-      <li>Overhead Triceps Extension with Dumbbell – Regular</li>
+      <li>Overhead Triceps Extension with Dumbbell</li>
 
-      <li>Dip – Negative Only</li>
+      <li>Dip – <b>Negative</b></li>
 
-      <li>Wrist Curl with Barbell – Regular</li>
+      <li>Wrist Curl with Barbell</li>
 
-      <li>Squat with Barbell – Regular</li>
+      <li>Squat with Barbell</li>
     </ol>
     <hr />
 
@@ -571,21 +552,29 @@ a:hover::before {
       <p>
         🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
         <br />
-        <a href="https://media.giphy.com/media/3oKIPf3C7HqqYBVcCk/giphy.gif" class="gandul">itisdone.gif</a>
+        <a
+          href="https://media.giphy.com/media/3oKIPf3C7HqqYBVcCk/giphy.gif"
+          class="gandul"
+          >itisdone.gif</a
+        >
         <br />
         🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
         <br /><br />
       </p>
 
       <p id="credits">
-        Insipired by <a href="https://en.wikipedia.org/wiki/Colorado_Experiment">The Colorado Experiment</a>.
-        <br /><br />
+        Insipired by
+        <a href="https://en.wikipedia.org/wiki/Colorado_Experiment"
+          >The Colorado Experiment</a
+        >. <br /><br />
         Routine outlined and modified by my great coworker, Ricky.
         <br /><br />
-        Website created by <a href="https://github.com/ylor">me</a>. I wanted a nicely formatted list that was hassle-free to look at in the middle of the workout.
+        Website by <a href="https://github.com/ylor">me</a>.
       </p>
     </center>
     <script src="https://unpkg.com/accessible-image-lazy-load"></script>
-    <script>gandul();</script>
+    <script>
+      gandul();
+    </script>
   </body>
 </html>
