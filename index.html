@@ -3,11 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
     <title>The Colorado Experiment</title>
   </head>
   <style>
     @import url("https://rsms.me/inter/inter.css");
     @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+
+    :root {
+      --bg-color: #111;
+      --text-color: #ccc;
+      --heading-color: #fedd56;
+      --link-color: #fbf1a9;
+      --font-stack: -apple-system, BlinkMacSystemFont, 'Inter var', Helvetica,
+        Arial, sans-serif;
+      --mono-stack: 'SFMono-Regular', 'Menlo', 'IBM Plex Mono', monospace;
+    }
 
     html {
     }
@@ -18,10 +30,9 @@
       max-width: 960px;
       padding:  16px;
 
-      background: #111;
-      color: #ccc;
-      font-family: -apple-system, BlinkMacSystemFont, 'Inter var', Helvetica,
-        Arial, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      font-family: var(--font-stack);
       font-size: 20px;
       line-height: 1.6;
       margin: auto;
@@ -32,11 +43,11 @@
     }
 
     a {
-      color: #2ecc40;
+      color: var(--link-color);
     }
 
     h1 {
-      color: hsl(48, 100%, 67%);
+      color: var(--heading-color);
       font-size: 36px;
       font-weight: 600;
       line-height: 1;
@@ -45,14 +56,36 @@
     }
     
     ol {
-      font-family: 'Menlo', 'IBM Plex Mono', monospace;
+      font-family: var(--mono-stack);
       padding-top: 10px;
       padding-bottom: 25px;
     }
 
-    #title {
+    .nav ul {
+  list-style: none;
+  text-align: center;
+}
+.nav li {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.nav li + li:before{
+    content: " | ";
+    padding: 0 10px;
+}
+  
+.nav a:hover {
+}
+ 
+.nav a.active {
+}
+
+    #title, #title a {
       font-size: 50px;
       font-weight: 900;
+      color: var(--heading-color);
+      text-decoration: none;
     }
 
     #title,
@@ -64,10 +97,16 @@
   </style>
 
   <body>
-    <h1 id="title">The Colorado Experiment</h1>
+    <h1 id="title"><a href="/">The Colorado Experiment</a></h1>
     <p id="description">
-      Description. Modified to allow for weekends off. 3 sets, 6-8 reps, 1
-      minute rest.
+      a month long trial
+      <div class="nav">
+        <ul>
+          <li><a href="/guidelines">Guidelines</a></li>
+          <li><a href="/exercises">Exercises</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
     </p>
     <p id="plan"></p>
     <hr />
@@ -508,11 +547,11 @@
 
     <center>
       <p>
-        🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
+        🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
         <br />
         <a href="https://media.giphy.com/media/3oKIPf3C7HqqYBVcCk/giphy.gif" class="gandul">itisdone.gif</a>
         <br />
-        🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
+        🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
         <br /><br />
       </p>
 
