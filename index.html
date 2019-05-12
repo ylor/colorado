@@ -44,7 +44,34 @@
 
     a {
       color: var(--link-color);
-    }
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: -4px;
+  right: -4px;
+  background-color: var(--link-color);
+  transform-origin: bottom center;
+  transform: scaleY(0.1);
+  transition: all 0.1s ease-in-out;
+  color: var(--bg-color)
+}
+
+a:hover {
+  color: var(--bg-color)
+}
+
+a:hover::before {
+  transform: scaleY(1);
+  background-color: var(--link-color);
+}
 
     h1 {
       color: var(--heading-color);
@@ -86,10 +113,11 @@
       font-weight: 900;
       color: var(--heading-color);
       text-decoration: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
 
     #title,
-    #description,
     #completion,
     #credits {
       text-align: center;
@@ -98,19 +126,13 @@
 
   <body>
     <h1 id="title"><a href="/">The Colorado Experiment</a></h1>
-    <p id="description">
-      a month long trial
       <div class="nav">
         <ul>
           <li><a href="/guidelines">Guidelines</a></li>
           <li><a href="/exercises">Exercises</a></li>
-          <li><a href="">Contact</a></li>
         </ul>
       </div>
-    </p>
-    <p id="plan"></p>
     <hr />
-
     <h1 id="workout1monday">Workout #1 - Monday</h1>
 
     <ol>
